@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="dp.js"></script>
+    <style>
+        body{
+            background-color: palevioletred;
+        }
+        h1{
+            text-align: center;         
+            color: palevioletred;
+        }
+        .container{
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 250px;
+        }
+        h3{
+            text-align: center;
+        }
+        input{
+            outline-color: rgb(252, 115, 179);
+            border-color: rgb(252, 115, 179);
+            margin-left: 33%;
+        }
+        a{
+            margin-left: 33%;
+            color: rgb(223, 131, 184);
+        }
+        hr{
+            color: deeppink;
+            border-color: deeppink;
+            background-color: deeppink;
+        }
+        button{
+            background-color: rgb(211, 211, 211);
+            border: 0cap;
+            border-radius: 8%;
+        }
+        button:hover {
+            transition: 0.5s;
+            background-color: #ff9bc1;
+        }
+        h4{
+            color: rgb(212, 97, 136);
+            text-align: center;
+        }
+        img{
+            height: 50px;
+            border: 0cap;
+            width: 150px;
+        }
+        #direita{
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><img id="esquerda" src="Flores.png"> Meu Diário <img id="direita" src="Flores.png">
+            <h4>Página inicial</h4>
+        </h1>
+        <hr>
+        <h3>Digite sua senha para acessar seu diário: </h3>
+        
+        <label for="senha"></label>
+        <input type="password" id="senha">
+        <button onclick="fazerLogin()">Entrar</button>
+        <br>
+        <a href="diariosenha.html">Não tem uma senha ainda?</a>
+    
+        </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Diário</title>
+    <script src="dp.js" defer></script>
+    <link rel="stylesheet" href="projeto.css">
+</head>
+<body>
+
+<div class="container">
+    <h1> <img id="direita" src="Flores.png"><img id="direita" src="Flores.png"> Meu Diário <img id="esquerda" src="Flores.png"><img id="esquerda" src="Flores.png"></h1>
+
+    <div class="novo registro">
+        <h2>Novo registro</h2>
+        <hr>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+        <br><br>
+        <label for="titulo">Título:</label>
+        <input id= "titulo" type="text" placeholder="Adicione um título...">
+        <br><br>
+        <label for="registro">Como foi seu dia?</label>
+        <br>
+        <textarea name="registro" id="registro" cols="105" rows="10" placeholder="Escreva sobre seu dia aqui..."></textarea>
+        <br>
+        <button onclick="fazerRegistro()">Registrar</button>
+    </div>
+    <br>
+    <div id="registros"></div>
+
+</div>
+
+</body>
+</html>
+
